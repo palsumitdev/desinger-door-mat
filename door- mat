@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+input_pattern=input().split()
+x=int(input_pattern[0])
+y=int(input_pattern[1])
+
+for i in range(1,x,2):
+    print((".|."*i).center(y,"-"))
+
+print("WELCOME".center(y,"-"))
+
+down=x-2
+for i in range(1,x,2):
+    print((".|."*down).center(y,"-"))
+    down=down-2
